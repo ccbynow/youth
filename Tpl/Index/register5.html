@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>会议注册</title>
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/css/xuehui.css" />
+<link href="http://www.biotechchina.org/main__ROOT__/Public/css/val.css" rel="stylesheet" type="text/css" />
+<link href="http://www.biotechchina.org/main__ROOT__/Public/css/demo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.biotechchina.org/main__ROOT__/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://www.biotechchina.org/main__ROOT__/Public/js/Validform_v5.3.2.js"></script>
+<META content="MSHTML 6.00.2900.3132" name=GENERATOR>
+<META name=keyword scontent="网上注册">
+<META content=网上注册 name=description>
+<META content=all name=ROBOTS>
+<META http-equiv=Content-Language content=zh-cn>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<div style="display:none"></div>
+</head>
+
+<body class="view">
+        <div class="zhong">
+        <div class="DCT_body2" align="center"></div>
+       <DIV id=header>
+	<include file="Public:header" />
+	<div class="zhuce" style="1px solid red;">
+	<P class="neirong" align="center">中国生物工程学会2016年学术年会会议注册</P><hr />
+	<div class="biao" align="left" >
+    <form id="demoform" method="post" action="__APP__/reg" enctype="multipart/form-data" class="demoform">
+
+	<table width="95%"  cellpadding="0" cellspacing="0" bgcolor="#fbfcfd" >
+    <tbody>
+                  <tr>
+                    <td height="32"  align="right"> 姓名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td  height="32" colspan="2"  align="left"><input type="text" value="" name="name" class="inputxt" datatype="s2-18" errormsg="请输入联系人姓名！" /></td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="39%" height="40" align="right" > 性别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2"  align="left"><input name="sex" type="radio" id="sex" value="男" class="pr1" datatype="*" nullmsg="请选择性别！"/>
+                      男 
+                      <input name="sex" type="radio" id="sex" value="女" class="pr1">
+                    女&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                  <tr>
+                    <td height="32"  align="right"> 年龄：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2"  align="left"><input id="age" name="age" value="" class="inputxt" datatype="n" errormsg="请输入正确的年龄，如40！"/>&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                  <tr>
+                    <td height="32"  align="right" >工作单位：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left" ><input name="danwei" id="danwei" datatype="*" errormsg="请填写您的单位名称！" /></td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                  <tr>
+                    <td height="32"   align="right">职务/职称：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left"><input id="zhiwu" name="zhiwu" datatype="*" errormsg="请填写您的职务！"/>&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                   
+                  <!-- <tr>
+                    <td height="32"   align="right"> 职称：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left"><input id="zhicheng" name="zhicheng" datatype="*" errormsg="请填写您的职称！" />&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr> -->
+                <tr>
+                    <td width="39%" height="40" align="right" > 学会职务：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2"  align="left"><input name="daibiao" type="radio" id="" value="会员" class="pr1" datatype="*" nullmsg="学会职务！"/>
+                      会员 
+                      <input name="daibiao" type="radio" id="" value="非会员" class="pr1">
+                    非会员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="39%" height="40" align="right" > 缴费方式：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2"  align="left"><input name="moneyway" type="radio" id="" value="会前缴费" class="pr1" datatype="*" nullmsg="缴费方式！"/>
+                      会前缴费（7月15日前） 
+                      <input name="moneyway" type="radio" id="" value="现场缴费" class="pr1">
+                    现场缴费（7月15日后）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                  <tr>
+                    <td height="32"   align="right">发票抬头：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left"><input name="beizhu" id="beizhu" datatype="*" errormsg="请填写您的发票抬头！"/></td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+               <tr>
+          
+                  <tr>
+                    <td height="32"   align="right">通信地址：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left"><input name="tongxin" id="tongxin" datatype="s5-50" errormsg="请填写您的通信地址！"/></td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				       <tr>
+                    <td height="32"   align="right">邮编：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left"><input id="youbian" name="postalcode" datatype="p" errormsg="请正确填写6位格式邮编！"/>&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				         <tr>
+                    <td height="32"   align="right">办公电话：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td align="left" ><input type="text" value="" class="inputxt" name="TelNumber" datatype="phone" errormsg="请填写固定电话，如010-88888888！" /></td>
+                      <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				         <tr>
+                    <td height="32"   align="right">手机：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td align="left"><input id="shouji" class="inputxt" name="PhoneNumber" datatype="m" errormsg="手机号码格式不对！" />&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				         <tr>
+                    <td height="32"   align="right">电子信箱：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td align="left"><input name="email" id="email" datatype="e" errormsg="请填写正确的邮箱格式！"/>&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				     <tr>
+                    <td height="32"   align="right">分会场选择：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    
+                     <td align="left" >
+                       <select name="whichhuichang" size="1" style="width:153px" datatype="*" nullmsg="请选择分会场！" errormsg="请选择分会场！">
+                        <option value="">请选择</option>
+                         <option value="工业与环境生物技术研讨会">（1）工业与环境生物技术研讨会</option>
+                         <option value="医学生物技术暨军队生物技术专业委员会年会">（2）医学生物技术暨军队生物技术专业委员会年会</option>
+                         <option value="农业生物技术研讨会">（3）农业生物技术研讨会</option>
+                         <option value="计算生物学与生物信息学研讨会">（4）计算生物学与生物信息学研讨会</option>
+                         <option value="全国干细胞与组织工程治疗峰会">（5）全国干细胞与组织工程治疗峰会</option>
+                         <option value="组学技术在农业及微生物领域的应用研讨会">（6）组学技术在农业及微生物领域的应用研讨会</option>
+                         <option value="全国生物技术职业教育年会">（7）全国生物技术职业教育年会</option>
+                         <option value="两岸四地生物技术论坛">（8）两岸四地生物技术论坛</option>
+                       </select>&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+				     </tr>
+             <tr>
+                    <td width="39%" height="40" align="right" > 酒店住宿安排:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2"  align="left">
+                    <span style="color:black">学府宾馆</span><br>&nbsp;&nbsp;<input name="hotel" type="radio" checked="true" value="Aroom1学府宾馆-标准间（两张单人床）260" />标准间（两张单人床）&nbsp;260元/天<br>&nbsp;&nbsp;<input name="hotel" type="radio" value="Aroom2学府宾馆标准间（一张床）260" />标准间（一张床）&nbsp;260元/天<br>&nbsp;&nbsp;<input name="hotel" type="radio" value="Aroom3学府宾馆套房（一张床）320" />套房（一张床）&nbsp;320元/天<br>
+
+                      <span style="color:black"> 汉庭酒店哈尔滨学府路店 </span><br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="Broom1汉庭大床房228" />
+                      大床房（一张床）&nbsp;228元/天<br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="Broom2汉庭标准间237" />
+                      标准间（两张房）&nbsp;237元/天<br>
+
+                      <span style="color:black"> 锦江之星西大直街店</span><br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="Croom1锦江之星标准间259" />标准间（双人床）&nbsp;259元/天<br>
+
+                      <span style="color:black">  翰林天悦大酒店  </span><br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="Droom1翰林标间320" />
+                      标间：320元/天 <br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="Droom2翰林豪华标间380" />豪华标间&nbsp;380元/天<br>
+
+                      <span style="color:black">  黑龙江大学C 区留学生公寓  </span><br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="Eroom1留学生公寓标准间180" />
+                      留学生公寓标准间（双人床）&nbsp;180元/天 <br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="Eroom2留学生公寓三人间210" />三人间（三张床）&nbsp;210元/天<br>
+
+                      <span style="color:black">其他选择</span><br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="自己安排" />
+                      自己安排住宿<br>
+
+                     
+
+                  </td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+					    
+               
+             <tr>
+
+
+					       <!-- <tr>
+                    <td height="32" align="right">申请分会场报告：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left"><input name="isreport" type="radio" id="radio" value="是" class="pr1" datatype="*" nullmsg="请选择是否申请分会场报告！"/>
+是
+  <input name="isreport" type="radio" id="radio" class="pr1" value="否" checked="checked"/>
+否&nbsp;&nbsp;&nbsp;</td>
+<td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				     <tr>
+                    <td height="32"   align="right">备注：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    
+                     <td align="left"><input name="beizhu" id="beizhu" /></td>
+                     <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+				     </tr> -->
+             <tr>
+                    <td height="32"   align="right"  >征文投稿：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td align="left"><input type="radio" name="property" value="person" id="person" class="pr1" datatype="*" nullmsg="是否直接提交论文！" /><label for="person">是</label>
+                        <input type="radio" name="property" value="company" id="company" class="pr1" checked="checked" /><label for="no">否</label></td>
+                        <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+            </tr>
+            </tbody>
+            <tbody class="person" style="display:none;">
+					  <tr>
+                    <td height="20" colspan="2"  ><hr /></td></tr>
+					  </tr>
+					  <tr>
+                    <td height="21" colspan="2"  ><p align="left"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;论文在线提交</b></p></td></tr>
+					
+					</td>
+                  </tr>
+				         <tr>
+                    <td height="32"   align="right">论文题目：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td align="left"><input type="text" name="papertitle" id="papertitle" /></td>
+                  </tr>
+<!-- 				    <tr>
+                    <td height="32"   align="right"  > 论文摘要：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="31" align="left">
+                      <label>
+                        <textarea name="digest" cols="30" rows="10" ></textarea>
+                      </label>
+                      <p style="color:#FF0000">要求：字数为1000字左右</p>
+                                     </td>
+                  </tr> -->
+				    <tr>
+                    <td height="32"   align="right"> 附件上传:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="31" align="left"><input type="file" name="lunwen" /></td>
+				    </tr> 
+            </tbody>
+            <tbody class="company" style="display:none;">
+            
+            </tbody>
+            <tr>
+                    <td width="39%" height="40" align="right" > 墙报安排：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2"  align="left"><input name="isreport" type="radio" id="isreport" value="是"  datatype="*" nullmsg="请选择此项！"/>
+                      安排 
+                      <input name="isreport" type="radio" id="isreport" value="否" >
+                    不安排&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+            <tr><input type="hidden" name="year" value="2016">
+              <td height="50" align="center"><input  type="submit" value="提交信息" name="button" /></td>
+              <td height="50" align="left">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="重新填写" /></td>
+            </tr>
+        </table>
+        <br/><hr/>
+        <br/>
+        <p class="neirong pcon">缴费信息：</p>
+        <table cellspacing="0" cellpadding="0" border="1" width="500">
+    <tbody>
+        <tr class="firstRow" style="height: 48px;">
+            <td width="217" height="48" style="padding: 0px 7px; border-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">注册类型</span>
+                </p>
+            </td>
+            <td width="120" height="48" style="padding: 0px 7px; border-left-style: none; border-top-color: #A9A9A9; border-right-color: #A9A9A9; border-bottom-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">普通参会代表</span>
+                </p>
+            </td>
+            <td width="125" height="48" style="padding: 0px 7px; border-left-style: none; border-top-color: #A9A9A9; border-right-color: #A9A9A9; border-bottom-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">学会会员</span>
+                </p>
+            </td>
+            <td width="120" height="48" style="padding: 0px 7px; border-left-style: none; border-top-color: #A9A9A9; border-right-color: #A9A9A9; border-bottom-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">在读研究生</span>
+                </p>
+            </td>
+        </tr>
+        <tr style="height: 48px;">
+            <td width="217" height="48" style="padding: 0px 7px; border-top-style: none; border-right-color: #A9A9A9; border-bottom-color: #A9A9A9; border-left-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">优惠注册（7月15日前）</span>
+                </p>
+            </td>
+            <td width="120" height="48" style="padding: 0px 7px; border-top-style: none; border-left-style: none; border-right-color: #A9A9A9; border-bottom-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">1600</span><span style="font-size: 15px; font-family: 宋体;">元</span>
+                </p>
+            </td>
+            <td width="125" height="48" style="padding: 0px 7px; border-top-style: none; border-left-style: none; border-right-color: #A9A9A9; border-bottom-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">1200</span><span style="font-size: 15px; font-family: 宋体;">元</span>
+                </p>
+            </td>
+            <td width="120" height="48" style="padding: 0px 7px; border-top-style: none; border-left-style: none; border-right-color: #A9A9A9; border-bottom-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">900</span><span style="font-size: 15px; font-family: 宋体;">元</span>
+                </p>
+            </td>
+        </tr>
+        <tr style="height: 48px;">
+            <td width="217" height="48" style="padding: 0px 7px; border-top-style: none; border-right-color: #A9A9A9; border-bottom-color: #A9A9A9; border-left-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">7</span><span style="font-size: 15px; font-family: 宋体;">月15日后及现场注册</span>
+                </p>
+            </td>
+            <td width="120" height="48" style="padding: 0px 7px; border-top-style: none; border-left-style: none; border-right-color: #A9A9A9; border-bottom-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">1800</span><span style="font-size: 15px; font-family: 宋体;">元</span>
+                </p>
+            </td>
+            <td width="125" height="48" style="padding: 0px 7px; border-top-style: none; border-left-style: none; border-right-color: #A9A9A9; border-bottom-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">1400</span><span style="font-size: 15px; font-family: 宋体;">元</span>
+                </p>
+            </td>
+            <td width="120" height="48" style="padding: 0px 7px; border-top-style: none; border-left-style: none; border-right-color: #A9A9A9; border-bottom-color: #A9A9A9;">
+                <p>
+                    <span style="font-size: 15px; font-family: 宋体;">1100</span><span style="font-size: 15px; font-family: 宋体;">元</span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<p class="neirong pcon">
+    <span style="font-size: 15px; font-family: 宋体;">账号信息：</span>
+</p>
+<p class="neirong pcon">
+    <span style="font-size: 15px; font-family: 宋体;">收款单位：中国生物工程学会</span>
+</p>
+<p class="neirong pcon">
+    <span style="font-size: 15px; font-family: 宋体;">开户银行：北京银行中关村支行</span>
+</p>
+<p class="neirong pcon">
+    <span style="font-size: 15px; font-family: 宋体;">账 号：0109 0302 9001 2010 5051 305</span>
+</p>
+      </form>
+	  </div>
+	</div>
+
+	<div id="footer">
+	     <div class="lan">
+	   <p class="lan_one" style="text-align:center;">It's recommended that you access this website using IE7 or Firefox<br />
+	  Conference Admin<br />
+	Powered by Duckling(CSP 1.4.8p6)</p></div>
+	</div>
+</div>
+</DIV>
+<script type="text/javascript" src="http://www.biotechchina.org/main__ROOT__/Public/js/Valid.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/* ================== common define ================== */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,th,img,dl,dt,dd{margin:0;padding:0;border:0; font-family:"微软雅黑"; font-size:12px; line-height:22px;}
+select,input{font-size:12px;}
+textarea,input,p{font-size:12px}
+body{color:#000;text-align:center; background:#dddddd;}
+ul,ol{list-style:none; margin:0 auto; padding:0;}
+img{border:0;}
+div{text-align:left; margin:0 auto; padding:0;}
+a{text-decoration:none;color:#000;}
+a:visited{text-decoration:none;color:#000;}
+a:active{text-decoration:none;color:#000;}
+a:hover{text-decoration: underline;color:#000;}
+.clear{clear:both;font-size:1px;line-height:0}
+p{text-indent:24px; padding:5px 0;}
+#clear{ clear:both;}
+#container{width:1000px;margin:0 auto;text-align:center; background:#fff; clear:both;}
+#container #header{height:88px;background:url(../images/headerbg.jpg) no-repeat center top;width:971px; margin:0 auto; text-align:right; padding:10px 0 0 0; clear:both;}
+#container #content{width:971px; clear:both; padding:9px 0;_padding:0;}
+#container #content #left{width:250px;float:left;}
+#container #content #left #login{width:100%; height:247px; background:url(../images/loginbg.jpg) no-repeat center top; font-size:14px; text-align:center; margin:0 0 0px 0;}
+#container #content #left #about{width:100%; height:87px; background:url(../images/aboutbg.jpg) no-repeat center top; font-size:14px; text-align:center; margin:0 0 5px 0; padding:46px 0 0 0; }
+#container #content #left #about ul{width:242px; margin:0 auto;text-align:center;}
+#container #content #left #about ul li{ float:left; height:28px; text-align:center; margin:0 1px; padding:0 0 12px 0;}
+.aboutbt{width:110px;*width:117px;_width:114px; height:28px; line-height:26px; color:#fff; background:#72b719; border:none; font-family:"微软雅黑"; font-size:15px; font-weight:bold;}
+#container #content #left #lsh{width:100%; background:url(../images/lshbg1.jpg) repeat-y center top;margin:0 0 5px 0; }
+#container #content #left #lsh #t{width:100%;background:url(../images/lshtbg1.jpg) no-repeat center top; height:34px;}
+#container #content #left #lsh #t #l{width:70%; float:left; padding:10px 0 0 24px;}
+#container #content #left #lsh #t #r{width:20%;; float:left;padding:10px 0 0 0;}
+#container #content #left #lsh #nr{width:100%; margin:0 auto; background:url(../images/lshfoot1.jpg) no-repeat center bottom; text-align:center; padding:8px 0;}
+#container #content #left #wyh{width:100%; background:url(../images/wyhbg1.jpg) repeat-y center top;margin:0 0 5px 0; }
+#container #content #left #wyh #t{width:100%;background:url(../images/wyht.jpg) no-repeat center top; height:38px; color:#fff; font-family:"微软雅黑"; font-weight:bold; font-size:15px; text-align:center; line-height:38px;}
+#container #content #left #wyh #nr{width:100%; margin:0 auto; background:url(../images/wyhfoot1.jpg) no-repeat center bottom; text-align:center; padding:0 0 8px 0;}
+#container #content #left #wyh #nr ul{width:92%;}
+#container #content #left #wyh #nr li{width:98%; line-height:22px; background:url(../images/wyhar.jpg) no-repeat left center; padding:0 0 0 8px; text-align:left; font-size:14px;}
+.wyhysbg{background:url(../images/wyhar.jpg) no-repeat left center #f5f5f5;width:98%; line-height:22px; }
+#container #content #left #member{width:100%; margin:0 auto;text-align:center; margin:0 0 5px 0;*margin:0 0 5px 1px;_margin:0 0 5px 1px;}
+#container #content #left #yjdy{width:100%; margin:0 auto;text-align:center; margin:0 0 5px 0; background:url(../images/wyhbg1.jpg) repeat-y center top;}
+#container #content #left #yjdy #t{width:100%; background:url(../images/yjdy.jpg) no-repeat center top; height:33px;}
+#container #content #left #yjdy #nr{width:100%; margin:0 auto; background:url(../images/wyhfoot1.jpg) no-repeat center bottom; text-align:center; padding:0 0 8px 0;}
+#container #content #left #list{width:100%; background:url(../images/notebg.jpg) repeat-y center top; margin:0 2px 6px 0; clear:both;}
+#container #content #left #list #t{width:100%;background:url(../images/notetbg.jpg) no-repeat center top; height:41px;}
+#container #content #left #list #t #l{width:76%; float:left; padding:11px 0 0 22px; font-family:"微软雅黑"; font-size:15px; font-weight:bold;}
+#container #content #left #list #t #r{width:14%;; float:left;padding:14px 0 0 0; text-align:right;}
+#container #content #left #list #nr{width:100%; margin:0 auto; background:url(../images/notefoot.jpg) no-repeat center bottom; text-align:center; padding:2px 0 11px 0;}
+#container #content #left #list #nr ul{width:92%;}
+#container #content #left #list #nr li{ background:url(../images/newsar.jpg) no-repeat left center; padding:0 0 0 8px; border-bottom:1px solid #edeaeb; line-height:23px; text-align:left;}
+#container #content #left #list #nr li a:link,a:visited,active{ font-size:14px;line-height:23px; text-align:left; color:#000; font-weight:normal;}
+#container #content #left #list #nr li a:hover{ font-size:14px;line-height:23px; text-align:left; color:#ff6600; text-decoration:none;}
+
+#container #content #center{width:435px; float:left; margin:0 0 0 3px;}
+#container #content #center #hotnews{width:100%; text-align:center; margin:0 2px 5px 2px; background:url(../images/hotimgbg.jpg) no-repeat center center; height:242px;}
+.dyt{width:127px; height:17px; line-height:17px; color:green; border:1px solid #056639;}
+#container #content #center #news{width:100%; background:url(../images/newsbg.jpg) repeat-y center top; margin:0 2px 6px 2px;  }
+#container #content #center #news #t{width:100%;background:url(../images/newstbg.jpg) no-repeat center top; height:38px;}
+#container #content #center #news #t #l{width:80%; float:left; padding:10px 0 0 18px;}
+#container #content #center #news #t #r{width:14%;; float:left;padding:10px 0 0 0; text-align:right;}
+#container #content #center #news #nr{width:100%; margin:0 auto; background:url(../images/newsfoot.jpg) no-repeat center bottom; text-align:center; padding:2px 0 7px 0;}
+#container #content #center #news #nr ul{width:96%;}
+#container #content #center #news #nr li #left{width:83%; float:left;}
+#container #content #center #news #nr li #right{width:15%; float:left; text-align:right; font-size:11px;}
+#container #content #center #news #nr li{ background:url(../images/newsar.jpg) no-repeat left center; padding:0 0 0 8px; border-bottom:1px solid #edeaeb; line-height:23px; text-align:left;}
+#container #content #center #news #nr li a:link,a:visited,active{ font-size:14px;line-height:23px; text-align:left;}
+#container #content #center #news #nr li a:hover{ font-size:14px;line-height:23px; text-align:left; color:#ff6600; text-decoration:none;}
+.speimg{background: #dedddd;border-top:1px solid #ccc;border-right:1px solid #b6b5b5;border-bottom:2px solid #b6b5b5;border-left:1px solid #ccc;padding:6px;}
+
+#container #content #ejright{width:684px; _width:680px; background:url(../images/ejrighbg.jpg) repeat-y left top; margin:0 0 0 3px; float:left;}
+#container #content #ejright #t{width:100%;background:url(../images/ejrightbg.jpg) no-repeat left top; height:38px;}
+#container #content #ejright #t #l{width:80%; float:left; padding:10px 0 0 18px;font-family:"微软雅黑"; font-size:15px; font-weight:bold;}
+#container #content #ejright #t #r{width:14%;; float:left;padding:10px 0 0 0; text-align:right;}
+#container #content #ejright #nr{width:100%; margin:0 auto; background:url(../images/ejrighfoot.jpg) no-repeat left bottom; text-align:center; padding:2px 0 7px 0;}
+#container #content #ejright #nr ul{width:96%; text-align:left; padding:6px;}
+#container #content #ejright #nr li #left{width:80%; float:left;}
+#container #content #ejright #nr li #right{width:18%; float:left; text-align:right; font-size:12px;}
+#container #content #ejright #nr li{ background:url(../images/+.gif) no-repeat left 7.5px; padding:0 0 0 11px; border-bottom:1px dashed #008c83; line-height:23px; text-align:left;}
+#container #content #ejright #nr li a:link,a:visited,active{ font-size:14px;line-height:23px; text-align:left;}
+#container #content #ejright #nr li a:hover{ font-size:14px;line-height:23px; text-align:left; color:#ff6600; text-decoration:none;}
+.speimg{background: #dedddd;border-top:1px solid #ccc;border-right:1px solid #b6b5b5;border-bottom:2px solid #b6b5b5;border-left:1px solid #ccc;padding:6px;}
+
+
+#container #content #right{width:279px; float:right;}
+#container #content #right #note{width:100%; background:url(../images/notebg.jpg) repeat-y center top; margin:0 2px 6px 2px;  }
+#container #content #right #note #t{width:100%;background:url(../images/notetbg.jpg) no-repeat center top; height:41px;}
+#container #content #right #note #t #l{width:76%; float:left; padding:12px 0 0 18px;}
+#container #content #right #note #t #r{width:14%;; float:left;padding:14px 0 0 0; text-align:right;}
+#container #content #right #note #nr{width:100%; margin:0 auto; background:url(../images/notefoot.jpg) no-repeat center bottom; text-align:center; padding:2px 0 11px 0;}
+#container #content #right #note #nr ul{width:96%;}
+#container #content #right #note #nr li #left{width:76%; float:left;}
+#container #content #right #note #nr li #right{width:23%; float:left; text-align:right; font-size:11px;}
+#container #content #right #note #nr li{ background:url(../images/newsar.jpg) no-repeat left center; padding:0 0 0 8px; border-bottom:1px solid #edeaeb; line-height:23px; text-align:left;}
+#container #content #right #note #nr li a:link,a:visited,active{ font-size:14px;line-height:23px; text-align:left;}
+#container #content #right #note #nr li a:hover{ font-size:14px;line-height:23px; text-align:left; color:#ff6600; text-decoration:none;}
+#container #content #right #cbw{width:100%; background:url(../images/cbwbg.jpg) repeat-y center top;margin:0 2px 5px 2px; }
+#container #content #right #cbw #t{width:100%;background:url(../images/lshtbg.jpg) no-repeat center top; height:34px;}
+#container #content #right #cbw #t #l{padding:9px 0 0 20px; width:67%;float:left; }
+#container #content #right #cbw #t #r{width:40px;; float:left;padding:10px 0 0 0;}
+#container #content #right #cbw #nr{width:100%; margin:0 auto; background:url(../images/cbwfoot.jpg) no-repeat center bottom; text-align:center; padding:8px 0;}
+#container #content #right #cbw #nr #all{width:90%;}
+#container #content #right #cbw #nr #all #np{width:49%; float:left; line-height:21px; text-align:center; margin:8px 1px;}
+#container #content #right #member{width:100%; height:auto;margin:0 2px 5px 2px;}
+#container #content #right #zmqy{width:100%; background:url(../images/notebg.jpg) repeat-y center top; margin:0 2px 0px 2px;*margin:0 2px 6px 2px;_margin:0 2px 6px 2px;}
+#container #content #right #zmqy #t{width:100%;background:url(../images/lshtbg.jpg) no-repeat center top; height:34px;}
+#container #content #right #zmqy #t #l{width:75%; float:left; padding:10px 0 0 20px;}
+#container #content #right #zmqy #t #r{width:14%;; float:left;padding:10px 0 0 0; text-align:right;}
+#container #content #right #zmqy #nr{width:100%; margin:0 auto; background:url(../images/notefoot.jpg) no-repeat center bottom; text-align:center; padding:2px 0 3px 0;_padding:2px 0 11px 0;*padding:2px 0 11px 0;}
+#container #content #right #zmqy #nr ul{width:96%;}
+#container #content #right #zmqy #nr li{ background:url(../images/zmqyar.jpg) no-repeat left center; padding:0 0 0 10px; border-bottom:1px solid #edeaeb; line-height:23px; text-align:left;}
+#container #content #right #zmqy #nr li a:link,a:visited,active{ font-size:14px;line-height:22px;_line-height:23px;*line-height:23px; text-align:left;}
+#container #content #right #zmqy #nr li a:hover{ font-size:14px;line-height:22px;_line-height:23px;*line-height:23px; text-align:left; color:#ff6600; text-decoration:none;}
+
+#container #content #links{width:971px;clear:both;}
+#container #content #links #yqlj{width:190px; background:url(../images/linksbg.jpg) repeat-y center top; margin:0 0 6px 4px; float:left;}
+#container #content #links #yqlj #t{width:100%;background:url(../images/linkstbg.jpg) no-repeat center top; height:32px; text-align:center; padding:7px 0 0 0;}
+#container #content #links #yqlj #nr{width:100%; margin:0 auto; background:url(../images/linksfoot.jpg) no-repeat center bottom; text-align:center; padding:2px 0 11px 0;}
+
+#container #content #links #yqlj #nr ul{width:92%;}
+#container #content #links #yqlj #nr li{width:98%; line-height:22px; background:url(../images/wyhar.jpg) no-repeat left center; padding:0 0 0 8px; text-align:left; font-size:12px;}
+#container #content #links #yqlj #nr li a:link,a:visited,active{ line-height:23px; text-align:left;}
+#container #content #links #yqlj #nr li a:hover{line-height:23px; text-align:left; color:#ff6600; text-decoration:none;}
+
+.loginbg{ border:1px solid #0e9995; width:170px; height:16px; line-height:16px; color:blue;}
+.loginyz{ border:1px solid #0e9995; width:90px; height:16px; line-height:16px;color:blue;}
+.tc{ text-align:center;}
+.fp_t{ font-size:12px; line-height:19px; text-decoration:underline; color:#0e9995;}
+a.fp_t:link{ font-size:12px; line-height:19px; text-decoration:underline;color:#0e9995;}
+a.fp_t:visited{ font-size:12px; line-height:19px; text-decoration:underline;color:#0e9995;}
+a.fp_t:active{ font-size:12px; line-height:19px; text-decoration:underline;}
+a.fp_t:hover{ font-size:12px; line-height:19px; text-decoration:none; color:#FF6600;}
+
+
+#footer{width:971px;height:68px;border-top:5px solid #242969;margin:0 auto;text-align:center; font-size:12px; padding:15px 0; margin:10px auto 0 auto; line-height:18px;}

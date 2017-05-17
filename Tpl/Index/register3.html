@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>会议注册</title>
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/css/xuehui.css" />
+<link href="http://www.biotechchina.org/main__ROOT__/Public/css/val.css" rel="stylesheet" type="text/css" />
+<link href="http://www.biotechchina.org/main__ROOT__/Public/css/demo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.biotechchina.org/main__ROOT__/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://www.biotechchina.org/main__ROOT__/Public/js/Validform_v5.3.2.js"></script>
+<META content="MSHTML 6.00.2900.3132" name=GENERATOR>
+<META name=keyword scontent="网上注册">
+<META content=网上注册 name=description>
+<META content=all name=ROBOTS>
+<META http-equiv=Content-Language content=zh-cn>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<div style="display:none"></div>
+</head>
+
+<body class="view">
+        <div class="zhong">
+        <div class="DCT_body" align="center"></div>
+       <DIV id=header>
+	<include file="Public:header" />
+	<div class="zhuce" style="1px solid red;">
+	<P class="neirong" align="center">会议注册</P><hr />
+	<div class="biao" align="left" >
+    <form id="demoform" method="post" action="__APP__/reg" enctype="multipart/form-data" class="demoform">
+	<table width="95%"  cellpadding="0" cellspacing="0" bgcolor="#fbfcfd" >
+    <tbody>
+                  <tr>
+                    <td height="32"  align="right"> 姓名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td  height="32" colspan="2"  align="left"><input type="text" value="" name="name" class="inputxt" datatype="s2-18" errormsg="请输入联系人姓名！" /></td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="39%" height="40" align="right" > 性别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2"  align="left"><input name="sex" type="radio" id="sex" value="男" class="pr1" datatype="*" nullmsg="请选择性别！"/>
+                      男 
+                      <input name="sex" type="radio" id="sex" value="女" class="pr1">
+                    女&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                  <tr>
+                    <td height="32"  align="right"> 年龄：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2"  align="left"><input id="age" name="age" value="" class="inputxt" datatype="n" errormsg="请输入正确的年龄，如40！"/>&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                  <tr>
+                    <td height="32"  align="right" >工作单位：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left" ><input name="danwei" id="danwei" datatype="*" errormsg="请填写您的单位名称！" /></td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                  <tr>
+                    <td height="32"   align="right">职务：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left"><input id="zhiwu" name="zhiwu" datatype="*" errormsg="请填写您的职务！"/>&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                   
+                  <tr>
+                    <td height="32"   align="right"> 职称：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left"><input id="zhicheng" name="zhicheng" datatype="*" errormsg="请填写您的职称！" />&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+                  <tr>
+                    <td height="32"   align="right">学会职务：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left">
+                        <input name="xhzhiwu[]" class="rt2" id="shoppingsite21" type="checkbox"  value="会员" datatype="need" nullmsg="请选择您的学会职务！" /><label for="">会员</label>
+                        <input name="xhzhiwu[]" class="rt2" id="shoppingsite22" type="checkbox"  value="理事" /><label for="shoppingsite22">理事</label>
+                        <input name="xhzhiwu[]" class="rt2" id="shoppingsite23" type="checkbox"  value="常务理事" /><label for="shoppingsite23">常务理事</label>
+                        <input name="xhzhiwu[]" class="rt2" id="shoppingsite23" type="checkbox"  value="其他" /><label for="shoppingsite23">其他</label>
+                    </td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                </tr>
+          
+                  <tr>
+                    <td height="32"   align="right">通信地址：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left"><input name="tongxin" id="tongxin" datatype="s5-50" errormsg="请填写您的通信地址！"/></td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				       <tr>
+                    <td height="32"   align="right">邮编：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left"><input id="youbian" name="postalcode" datatype="p" errormsg="请正确填写6位格式邮编！"/>&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				         <tr>
+                    <td height="32"   align="right">固定电话：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td align="left" ><input type="text" value="" class="inputxt" name="TelNumber" datatype="phone" errormsg="请填写固定电话，如010-88888888！" /></td>
+                      <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				         <tr>
+                    <td height="32"   align="right">手机：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td align="left"><input id="shouji" class="inputxt" name="PhoneNumber" datatype="m" errormsg="手机号码格式不对！" />&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				         <tr>
+                    <td height="32"   align="right">电子信箱：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td align="left"><input name="email" id="email" datatype="e" errormsg="请填写正确的邮箱格式！"/>&nbsp;&nbsp;&nbsp;</td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				     <tr>
+                    <td height="32"   align="right">分会场选择：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    
+                     <td align="left" >
+                       <select name="whichhuichang" size="1" style="width:153px" datatype="*" nullmsg="请选择分会场！" errormsg="请选择分会场！">
+                        <option value="">请选择</option>
+                         <option value="医学生物技术研讨会暨全军生物技术学术研讨会">医学生物技术研讨会暨全军生物技术学术研讨会</option>
+                         <option value="生物技术药物与转化医学研讨会">生物技术药物与转化医学研讨会</option>
+                         <option value="农业生物技术研讨会">农业生物技术研讨会</option>
+                         <option value="工业生物技术研讨会">工业生物技术研讨会</option>
+                         <option value="生物资源研讨会">生物资源研讨会</option>
+                         <option value="计算生物学与生物信息学研讨会">计算生物学与生物信息学研讨会</option>
+                       </select>&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+				     </tr>
+             <tr>
+                    <td width="39%" height="40" align="right" > 酒店住宿安排:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2"  align="left"><span style="color:black">温州万豪商务大酒店</span><br>&nbsp;&nbsp;<input name="hotel" type="radio" checked="true" value="温州万豪商务大酒店普通单间" />
+                      普通单间&nbsp;368元/天&nbsp;&nbsp;<input name="hotel" type="radio" value="温州万豪商务大酒店普通标间" />普通标间&nbsp;358元/天<br>
+                      <span style="color:black">温州红太阳宾馆</span><br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="温州红太阳宾馆普通标间" />
+                      普通标间&nbsp;218元/天<br>
+                      <span style="color:black">温州瑶溪王朝大酒店</span><br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="温州瑶溪王朝大酒店湖景单标间" />湖景单标间&nbsp;560元/天&nbsp;&nbsp;<input name="hotel" type="radio"  value="温州瑶溪王朝大酒店豪华单标间" />豪华单标间&nbsp;440元/天&nbsp;&nbsp;<br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="温州瑶溪王朝大酒店普通标间" />普通标间&nbsp;380元/天<br>
+                      <span style="color:black">其他选择</span><br>&nbsp;&nbsp;<input name="hotel" type="radio"  value="自己安排" />
+                      自己安排住宿<br>
+
+                     
+
+                  </td>
+                    <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+					    
+               
+             <tr>
+
+
+					       <tr>
+                    <td height="32" align="right">是否申请分会场报告：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="32" colspan="2" align="left"><input name="isreport" type="radio" id="radio" value="是" class="pr1" datatype="*" nullmsg="请选择是否申请分会场报告！"/>
+是
+  <input name="isreport" type="radio" id="radio" class="pr1" value="否" />
+否&nbsp;&nbsp;&nbsp;</td>
+<td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+                  </tr>
+				     <tr>
+                    <td height="32"   align="right">备注：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    
+                     <td align="left"><input name="beizhu" id="beizhu" /></td>
+                     <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+				     </tr>
+             <tr>
+                    <td height="32"   align="right"  >是否直接提交论文：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td align="left"><input type="radio" name="property" value="person" id="person" class="pr1" datatype="*" nullmsg="是否直接提交论文！" /><label for="person">是</label>
+                        <input type="radio" name="property" value="company" id="company" class="pr1" /><label for="no">否</label></td>
+                        <td><div class="Validform_checktip" style="margin-left:-100px;"></div></td>
+            </tr>
+            </tbody>
+            <tbody class="person" style="display:none;">
+					  <tr>
+                    <td height="20" colspan="2"  ><hr /></td></tr>
+					  </tr>
+					  <tr>
+                    <td height="21" colspan="2"  ><p align="left"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;论文在线提交</b></p></td></tr>
+					
+					</td>
+                  </tr>
+				         <tr>
+                    <td height="32"   align="right">论文题目：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td align="left"><input type="text" name="papertitle" id="papertitle" /></td>
+                  </tr>
+				    <tr>
+                    <td height="32"   align="right"  > 论文摘要：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="31" align="left">
+                      <label>
+                        <textarea name="digest" cols="30" rows="10" ></textarea>
+                      </label>
+                      <p style="color:#FF0000">要求：字数为1000字左右</p>
+                                     </td>
+                  </tr>
+				    <tr>
+                    <td height="32"   align="right"> 附件上传:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td height="31" align="left"><input type="file" name="lunwen" /></td>
+				    </tr> 
+            </tbody>
+            <tbody class="company" style="display:none;">
+            
+            </tbody>
+            <tr>
+              <td height="50" align="center"><input  type="submit" value="提交信息" name="button" /></td>
+              <td height="50" align="left">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="重新填写" /></td>
+            </tr>
+        </table>
+      </form>
+	  </div>
+	</div>
+
+	<div id="footer">
+	     <div class="lan">
+	   <p class="lan_one" style="text-align:center;">It's recommended that you access this website using IE7 or Firefox<br />
+	  Conference Admin<br />
+	Powered by Duckling(CSP 1.4.8p6)</p></div>
+	</div>
+</div>
+</DIV>
+<script type="text/javascript" src="../Public/js/Valid.js"></script>
+    </body>
+
+</html>
